@@ -11,6 +11,8 @@ MERN app for reading e-books.
 
 **SERVER**
 
+> User
+
 - get all users from db
 - register new user into db
 - login user -> return token
@@ -20,6 +22,32 @@ MERN app for reading e-books.
 
   - get logged in user info from db
   - fix 'update user info' - only authorized user ??
+
+> Author
+
+- get all authors from db
+- get one author info from db
+- save new author into db
+- update author info in db
+- delete author in db
+
+> Avatar
+
+- get all avatars from db
+
+  _TODO_
+
+  - save new avatar icon in db
+  - update avatar icon (if better/different image will be needed)
+  - delete avatar from db (if no longer needed this avatar icon)
+
+> Book
+
+- get all books from db
+- get one book info from db
+- save new book into db and connect it with author (based on author url)
+- update book info in db
+- delete book from db and remove connection from author in db
 
 ### Layout:
 
