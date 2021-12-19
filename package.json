@@ -1,0 +1,41 @@
+{
+  "name": "ourbookcase",
+  "description": "MERN app for reading e-books.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawe484/ourBookcase.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "react",
+    "fullstack"
+  ],
+  "author": "David Krénar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawe484/ourBookcase/issues"
+  },
+  "homepage": "https://github.com/dawe484/ourBookcase#readme"
+}
