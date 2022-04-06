@@ -1,0 +1,137 @@
+.our-container-background {
+  background-image: url('../../images/bookshelf-original.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 70vh;
+  /* width: 100vw; */
+  clip-path: ellipse(140% 60% at 50% 40%);
+}
+
+.our-card-text-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.our-card-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.our-card-text .our-card-text-h1 {
+  font-size: 2rem;
+}
+
+.our-card-text .our-card-text-h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.our-card.center {
+  max-width: 1920px;
+  margin: 2rem auto 0;
+}
+
+.our-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.our-card-container .our-card-text .our-card-text-h2 {
+  margin-top: 1rem;
+}
+
+.our-card-container.reverse {
+  flex-direction: column-reverse;
+}
+
+/* Extra small devices (phones, 340px and up) */
+@media only screen and (min-width: 340px) {
+  .our-container-background {
+    clip-path: ellipse(100% 60% at 50% 40%);
+  }
+
+  .our-card-text-title .our-card-text-h1 {
+    font-size: 2.5rem;
+  }
+
+  .our-card-text .our-card-text-h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .danger-btn.memberBtn {
+    font-size: 1.1rem;
+    padding: 11px 30px;
+  }
+}
+
+/* Small devices (tablets and phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .our-card-container {
+    flex-direction: row !important;
+  }
+
+  .our-card-text {
+    margin: auto;
+  }
+
+  .our-card-text .our-card-text-h2.margin-botton-0 {
+    margin-bottom: 0;
+  }
+
+  .our-card-img {
+    width: 100%;
+  }
+}
+
+/* Middle devices (tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .our-card-container {
+    padding: 0 3rem;
+  }
+
+  .our-card-text-title .our-card-text-h1 {
+    font-size: 3rem;
+  }
+
+  .danger-btn.memberBtn {
+    padding: 13px 38px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .our-card-text .our-card-text-h1 {
+    font-size: 3rem;
+  }
+
+  .our-card-text-title .our-card-text-h1 {
+    font-size: 4rem;
+  }
+
+  .danger-btn.memberBtn,
+  .our-card-text .our-card-text-h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .our-card-text-title .our-card-text-h2 {
+    font-size: 2rem;
+  }
+
+  .danger-btn.memberBtn {
+    padding: 15px 46px;
+  }
+
+  .our-card.center {
+    margin-top: 4rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

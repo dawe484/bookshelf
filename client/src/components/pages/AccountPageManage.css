@@ -1,0 +1,68 @@
+.left-container,
+.right-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-container .our-row-title h1 {
+  font-size: 24px;
+}
+
+.our-row-title.jc-flex-start i.fas {
+  font-size: 32px;
+}
+
+.our-row-title.jc-flex-start a:hover i.fas {
+  color: var(--danger-color);
+}
+
+.confirm-avatar-buttons,
+.confirm-avatar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-center-container {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-avatar {
+  text-align: center;
+}
+
+.change-avatar img {
+  margin: 1rem;
+}
+
+.profile-avatar-static img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+/* AccountSliderItem */
+
+.avatar-slider-card-image {
+  margin: 0 0.5rem;
+}
+
+.avatar-slider-card-image img {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.avatar-slider-card-image:hover img {
+  border: 2px solid var(--light-color);
+  opacity: 0.75;
+}

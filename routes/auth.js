@@ -27,7 +27,7 @@ router.get('/', auth, async (req, res) => {
         },
       })
       .populate({ path: 'favouriteBooks', select: '-date -updatedAt -__v' })
-      .populate({ path: 'eBookcase', select: '-date -updatedAt -__v' })
+      .populate({ path: 'bookshelf', select: '-date -updatedAt -__v' })
       .populate({ path: 'wantToBorrow', select: '-date -updatedAt -__v' })
       .sort({ date: -1 });
 
@@ -84,7 +84,7 @@ router.post(
         payload,
         config.get('jwtSecret'),
         {
-          expiresIn: 360000,
+          expiresIn: '3d',
         },
         (err, token) => {
           if (err) throw err;

@@ -1,0 +1,102 @@
+/* Global Styles */
+:root {
+  --primary-color: #181818;
+  --light-color: #ffffff;
+  --danger-color: #e600e6;
+  /* --danger-color: #ea0f4a; */
+  --danger-hover-color: #800080;
+  /* --danger-hover-color: #c90d3f; */
+  --neutral-color: #c39ea0;
+  --dark-color: #000000;
+  --success-color: #42cdab;
+  --warning-color: #e98074;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+a,
+button {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border: 0;
+}
+
+.our-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.danger-btn {
+  background-color: var(--danger-color);
+  line-height: normal;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid var(--danger-color);
+  padding: 7px 19px;
+}
+
+.danger-btn:hover {
+  background-color: var(--danger-hover-color);
+  border-color: var(--danger-hover-color);
+}
+
+.transparent-danger-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--danger-color);
+}
+
+.transparent-danger-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Extra small devices (phones, 340px and up) */
+@media only screen and (min-width: 340px) {
+}
+
+/* Small devices (tablets and phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .danger-btn {
+    padding: 9px 23px;
+  }
+}
+
+/* Middle devices (tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .danger-btn {
+    padding: 11px 27px;
+  }
+}

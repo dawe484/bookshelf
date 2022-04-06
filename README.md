@@ -6,8 +6,48 @@ MERN app for reading e-books.
 
 **CLIENT**
 
-- ...
-<!-- - change language (Czech, English) - text + images (TODO: background image and second card image in Intro page) -->
+- user can change languages (Czech, English) of pages
+
+> Main Page
+
+_TODO_
+
+- better resolution (96dpi) in background picture
+- new images for sections
+- change language - images for English
+
+> SignIn and SignUp Pages
+
+- SignUp Page - user can sign up (required fields = username, email and password)
+- SignIn Page - user can sign in (required fields = email and password)
+
+> Help Page
+
+- only header text
+
+  _TODO_
+
+  - in progress
+
+> About Page
+
+- only header text
+
+  _TODO_
+
+  - in progress
+
+_TODO_
+
+- Careers Page
+- Press Page
+- Contact Us Page
+- Term of Use Page
+- Privacy Page
+- Cookie Preferences Page
+- Sitemap Page
+
+- Socials - FB, Twitter, Youtube, Insta
 
 **SERVER**
 
@@ -17,10 +57,10 @@ MERN app for reading e-books.
 - register new user into db
 - login user -> return token
 - update user info in db
+- get logged in user info from db
 
   _TODO_
 
-  - get logged in user info from db
   - fix 'update user info' - only authorized user ??
 
 > Author
@@ -51,8 +91,28 @@ MERN app for reading e-books.
 
 ### Layout:
 
-<!-- - Intro page - mobile, desktop version -->
-<!-- - Sign In and Sign Up pages - mobile, desktop version -->
+- Intro Page
+
+  - mobile, desktop version
+
+- Sign In and Sign Up Pages
+
+  - mobile, desktop version
+
+- Browse Page
+
+  - mobile, desktop version
+  - the user can see the ebooks that are being read
+  - the user can see some ebooks in that category (fantasy, ...)
+  - in the navbar is profile avatar pucture and username
+
+- Ebooks Page
+
+  - displays all ebooks in db
+
+- Authors Page
+
+  - displays all authors in db
 
 <!-- Supported files:
 

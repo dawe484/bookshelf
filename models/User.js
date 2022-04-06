@@ -35,6 +35,7 @@ const UserSchema = new Schema(
     },
     userImage: {
       type: String,
+      default: '/img/avatars/blue.png',
     },
     realName: {
       type: String,
@@ -78,7 +79,7 @@ const UserSchema = new Schema(
         ref: 'book',
       },
     ],
-    eBookcase: [
+    bookshelf: [
       {
         type: Schema.Types.ObjectId,
         ref: 'book',

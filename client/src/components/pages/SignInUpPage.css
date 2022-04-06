@@ -1,0 +1,155 @@
+.our-sign-form-body {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 6px;
+  margin: 6rem auto;
+}
+
+.our-sign-panel h1 {
+  font-size: 2rem;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.our-form-content {
+  margin: 0 auto;
+}
+
+.our-social-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 1.5rem;
+}
+
+.our-social-container .social {
+  font-size: 2.5rem;
+}
+
+.our-sign-panel .our-social-container a:hover i.fab.fa-facebook-square {
+  color: #1778f2;
+}
+
+.our-sign-panel .our-social-container a:hover i.fab.fa-google-plus-square {
+  color: #db3236;
+}
+
+.our-sign-panel .our-social-container a:hover i.fab.fa-linkedin {
+  color: #0e76a8;
+}
+
+.our-sign-panel .our-social-container a:hover i.fab.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.our-sign-message span,
+.our-sign-panel .our-sign-email {
+  font-size: 14px;
+  text-align: center;
+}
+
+.our-sign-input-field {
+  margin: 1.5rem 1rem 2rem;
+}
+
+.our-sign-input-field label:nth-child(odd) {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.our-sign-input-field label:nth-child(6) {
+  font-size: 14px;
+}
+
+.our-sign-input-field input[type='text'],
+.our-sign-input-field input[type='email'],
+.our-sign-input-field input[type='password'],
+.our-sign-input-field input[type='date'],
+.our-sign-input-field input[type='file'] {
+  display: block;
+  background: var(--light-color);
+  caret-color: var(--danger-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 4px;
+  border: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.our-agreement,
+.our-forget-message {
+  font-size: 14px;
+  margin: 0 1rem 2rem;
+}
+
+.danger-btn.sign-btn {
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+}
+
+.our-button-container {
+  margin: 0 1rem 1rem;
+}
+
+.our-sign-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-sign-message a:hover,
+.our-agreement a:hover,
+.our-forget-message a:hover {
+  color: var(--danger-color);
+}
+
+.our-sign-message a {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.our-agreement .bold {
+  font-weight: bold;
+}
+
+/* Extra small devices (phones, 340px and up) */
+@media only screen and (min-width: 340px) {
+  .our-sign-message {
+    flex-direction: row;
+    margin: 0 1rem;
+    align-items: baseline;
+  }
+
+  .our-sign-message a {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+/* Small devices (tablets and phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Middle devices (tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (portrait 992px and up) */
+@media only screen and (min-height: 992px) {
+  .our-sign-container {
+    height: 70vh;
+  }
+}
+
+/* Extra, extra large devices (large laptops and desktops, 1920px and up) */
+@media only screen and (min-height: 1920px) {
+  .our-sign-container {
+    height: 81vh;
+  }
+}

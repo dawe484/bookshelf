@@ -1,0 +1,154 @@
+/* .books-divider {
+  display: grid;
+  grid-template-columns: auto 744px;
+  column-gap: 1rem;
+} */
+
+.list-item {
+  max-width: 186px;
+  /* background: blue; */
+  margin: 0 auto 12px;
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #1c1c1c;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  /* background-color: #191919; */
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 1);
+}
+
+.list-card {
+  /* position: relative; */
+  /* height: 260px; */
+  /* background: blueviolet; */
+  perspective: 1000px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.list-card_image {
+  padding: 8px;
+}
+
+.list-card .book-status-labels {
+  position: absolute;
+}
+
+.list-card_no-image {
+  margin: auto;
+}
+
+.list-card_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.list-item:hover .list-card_content .list-card_annotation {
+  transform: rotateY(0deg);
+}
+
+.list-item:hover .list-card_content img {
+  transform: rotateY(180deg);
+}
+
+.list-card .list-card_annotation,
+.list-card img {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.list-card_image img {
+  max-height: 238px;
+  object-fit: cover;
+  border: 2px solid var(--light-color);
+  border-radius: 8px;
+}
+
+.list-card_annotation {
+  position: absolute;
+  padding: 0 12px;
+  z-index: 2;
+  transform: rotateY(180deg);
+}
+
+.list-card_annotation p {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.list-item .list-card-specification {
+  text-align: center;
+  padding: 0 8px 12px;
+}
+
+/* .list-item .list-card-specification .line {
+  border-top: 2px solid var(--light-color);
+  opacity: 0.75;
+} */
+
+.list-item .list-card-specification span {
+  font-size: 0.85rem;
+  color: var(--light-color);
+  font-style: italic;
+}
+
+.list-item .list-card-specification h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* .list-item:hover a .list-card-specification h2 {
+  color: var(--danger-color);
+  opacity: 1;
+} */
+
+/* .add-to-sm {
+  width: 168px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  opacity: 0.9;
+  border-top: 1px solid var(--danger-color);
+}
+
+.add-to-sm .far {
+  font-size: 1rem;
+}
+
+.add-to-sm span {
+  margin-left: 6px;
+}
+
+.add-to-sm .btn-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Extra small devices (phones, 340px and up) */
+@media only screen and (min-width: 340px) {
+}
+
+/* Small devices (tablets and phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Middle devices (tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

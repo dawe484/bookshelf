@@ -1,0 +1,95 @@
+/* Based on
+Book loader (pure css)
+Iris van den Hooven
+https://codepen.io/podenemus/pen/eJqwBL
+ */
+.spinner {
+  margin-bottom: 8rem;
+}
+
+.spinner h1 {
+  color: var(--danger-color);
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+
+.spinner h1:after {
+  position: absolute;
+  content: '';
+  animation: Dots 2s cubic-bezier(0, 0.39, 1, 0.68) infinite;
+}
+
+.book-spinner-bg {
+  margin: 10% auto 20px;
+}
+
+.book-spinner {
+  border: 4px solid var(--danger-color);
+  width: 90px;
+  height: 66px;
+  position: relative;
+  perspective: 200px;
+}
+
+.book-spinner-page {
+  display: block;
+  width: 45px;
+  height: 66px;
+  border: 4px solid var(--danger-color);
+  border-left: 1px solid var(--primary-color);
+  margin: 0;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  overflow: hidden;
+  background: var(--light-color);
+  transform-style: preserve-3d;
+  transform-origin: left center;
+}
+
+.book-spinner .book-spinner-page:nth-child(1) {
+  animation: pageTurn 1.2s cubic-bezier(0, 0.39, 1, 0.68) 1.6s infinite;
+}
+
+.book-spinner .book-spinner-page:nth-child(2) {
+  animation: pageTurn 1.2s cubic-bezier(0, 0.39, 1, 0.68) 1.45s infinite;
+}
+
+.book-spinner .book-spinner-page:nth-child(3) {
+  animation: pageTurn 1.2s cubic-bezier(0, 0.39, 1, 0.68) 1.2s infinite;
+}
+
+/* Page turn */
+@keyframes pageTurn {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    background: var(--primary-color);
+  }
+  40% {
+    background: var(--primary-color);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    background: var(--light-color);
+    transform: rotateY(-180deg);
+  }
+}
+
+/* Dots */
+@keyframes Dots {
+  0% {
+    content: '';
+  }
+  33% {
+    content: '.';
+  }
+  66% {
+    content: '..';
+  }
+  100% {
+    content: '...';
+  }
+}
